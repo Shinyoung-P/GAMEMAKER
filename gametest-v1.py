@@ -58,7 +58,7 @@ class Character:
 
     def activate_laser(self):
         self.laser_active = True
-        self.laser_end_time = time.time() + 1  # 1초 지속
+        self.laser_end_time = time.time() + 0.1  # 0.1초 지속
         if self.last_direction == "UP":
             self.laser_rect = pygame.Rect(self.x + self.size // 2 - 5, 0, 10, self.y)
         elif self.last_direction == "DOWN":
